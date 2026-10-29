@@ -9,7 +9,7 @@
 
 | Concept ID | Repository | Chapter | Concept | Status | Verified URL | Last verified commit |
 |---|---|---|---|---|---|---|
-| (hub) | threejs-course-hub | — | Course control hub | CREATED - partial (13 of 27 files) | https://github.com/yashk3163-cmyk/threejs-course-hub | 625425c94c87b28f0a12f5c0ea2deec2ff780eb5 |
+| (hub) | threejs-course-hub | — | Course control hub | CREATED - complete (27 files) | https://github.com/yashk3163-cmyk/threejs-course-hub | 8049e5ac0ef6b8efdc2aad1f70830b42fd749071 |
 | P01-CH01-C01 | threejs-c01-dev-environment-setup | P01-CH01 | Development environment setup | PLANNED | — | — |
 | P01-CH01-C02 | threejs-c02-first-scene-quick-win | P01-CH01 | First 3D scene quick win | PLANNED | — | — |
 | P01-CH02-C01 | threejs-c03-terminal-node-npm-scripts | P01-CH02 | Terminal, Node, npm and scripts | PLANNED | — | — |

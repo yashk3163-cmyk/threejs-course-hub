@@ -2,6 +2,11 @@
 
 All notable changes to the course plan and hub. Dates are Asia/Calcutta.
 
+## Hub complete — 2026-10-29 15:22
+
+- Creator installed the Claude GitHub App. Assistant pushed `8049e5a` (the 14 missing files plus updated state files) on top of `625425c`. Verified: `main` = `8049e5a`, fresh clone has all 27 files byte-identical to the built hub, validator passes (D-021).
+- This entry and the matching CURRENT_STATE.md / PROGRESS.json / REPOSITORY_INDEX.md / DECISION_LOG.md updates were committed in the next commit, which only changes state files.
+
 ## Hub publishing — 2026-10-29 15:15
 
 - Creator created the private repo https://github.com/yashk3163-cmyk/threejs-course-hub and uploaded 13 files (commit `625425c`). Verified: all 13 identical to the built hub; `PROMPTS/`, `TEMPLATES/` and `scripts/` (14 files) missing (D-020).
