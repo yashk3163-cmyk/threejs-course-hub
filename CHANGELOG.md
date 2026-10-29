@@ -2,6 +2,12 @@
 
 All notable changes to the course plan and hub. Dates are Asia/Calcutta.
 
+## Hub publishing — 2026-10-29 15:15
+
+- Creator created the private repo https://github.com/yashk3163-cmyk/threejs-course-hub and uploaded 13 files (commit `625425c`). Verified: all 13 identical to the built hub; `PROMPTS/`, `TEMPLATES/` and `scripts/` (14 files) missing (D-020).
+- Recorded owner `yashk3163-cmyk`, the verified URL and commit in PROGRESS.json; REPOSITORY_INDEX.md regenerated.
+- Assistant push refused (Claude GitHub App not installed); missing files and updated state files delivered as an upload pack.
+
 ## [1.0.0] — 2026-10-29 — roadmap approved
 
 - Creator approved the roadmap. Frozen as the v1.0.0 baseline (D-013). Chapters, concepts, IDs and repository names are identical to 0.1.0-draft.
