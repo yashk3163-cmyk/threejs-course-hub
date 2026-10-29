@@ -1,0 +1,275 @@
+{
+  "course": "threejs-explainer-course",
+  "hubRepo": "threejs-course-hub",
+  "owner": "creator's personal GitHub account (username to be recorded at first publish)",
+  "visibility": "private",
+  "roadmapVersion": "1.0.0",
+  "roadmapStatus": "APPROVED",
+  "approvedDate": "2026-10-29",
+  "supersedes": "0.1.0-draft (same chapters, concepts, IDs and repo names; effort totals recomputed)",
+  "researchDate": "2026-10-29",
+  "baseline": {
+    "three": "0.186.1",
+    "threeRevision": "r186",
+    "renderer": "WebGLRenderer",
+    "vite": "8.3.5",
+    "viteNodeEngines": "^20.19.0 || >=22.12.0",
+    "nodeTarget": "26 LTS",
+    "nodeAccepted": ">=22.12 (24 LTS and 26 LTS preferred)",
+    "ffmpeg": "9.0.x or 8.1.x preferred; any build with libx264 accepted"
+  },
+  "idFormat": { "chapter": "Pxx-CHyy", "concept": "Pxx-CHyy-Czz", "repo": "threejs-cNN-slug" },
+  "statusValues": ["PLANNED", "IN_PROGRESS", "QA", "PARTIAL", "COMPLETE", "BLOCKED"],
+  "parts": [
+    { "id": "P01", "title": "Orientation, quick win and toolchain" },
+    { "id": "P02", "title": "JavaScript foundations" },
+    { "id": "P03", "title": "Browser foundations" },
+    { "id": "P04", "title": "Core Three.js I (with vectors)" },
+    { "id": "P05", "title": "Transforms, rotations and projection" },
+    { "id": "P06", "title": "Rendering look: GPU model, colour, materials" },
+    { "id": "P07", "title": "Interaction, UI and labels" },
+    { "id": "P08", "title": "Geometry, assets and lifecycle" },
+    { "id": "P09", "title": "Deterministic animation and cinematic 3D" },
+    { "id": "P10", "title": "Data, callouts and video layouts" },
+    { "id": "P11", "title": "Explainer-video production pipeline" },
+    { "id": "P12", "title": "Shaders and advanced rendering" },
+    { "id": "P13", "title": "Production engineering" },
+    { "id": "P14", "title": "Final capstone" },
+    { "id": "P15", "title": "Optional advanced branches (non-blocking)" }
+  ],
+  "chapters": [
+    { "id": "P01-CH01", "title": "Setup and first 3D quick win", "track": "core", "prereqs": [], "effortMinutes": { "low": 75, "high": 75 }, "project": "Personalised spinning-object scene with a caption", "status": "PLANNED", "next": "P01-CH02",
+      "concepts": [
+        { "id": "P01-CH01-C01", "num": 1, "repo": "threejs-c01-dev-environment-setup", "title": "Development environment setup", "status": "PLANNED" },
+        { "id": "P01-CH01-C02", "num": 2, "repo": "threejs-c02-first-scene-quick-win", "title": "First 3D scene quick win", "status": "PLANNED" } ] },
+    { "id": "P01-CH02", "title": "What the tools do: terminal, Node, npm, Vite, import maps", "track": "core", "prereqs": ["P01-CH01"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Same scene built twice (Vite, and pinned import map)", "status": "PLANNED", "next": "P01-CH03",
+      "concepts": [
+        { "id": "P01-CH02-C01", "num": 3, "repo": "threejs-c03-terminal-node-npm-scripts", "title": "Terminal, Node, npm and scripts", "status": "PLANNED" },
+        { "id": "P01-CH02-C02", "num": 4, "repo": "threejs-c04-vite-vs-importmap-routes", "title": "Vite route vs import-map route", "status": "PLANNED" } ] },
+    { "id": "P01-CH03", "title": "Git and GitHub for this course", "track": "core", "prereqs": ["P01-CH02"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Learner's quick-win scene published to GitHub (deployment target decided at preflight: Pages needs a paid plan for private repos)", "status": "PLANNED", "next": "P02-CH01",
+      "concepts": [
+        { "id": "P01-CH03-C01", "num": 5, "repo": "threejs-c05-git-local-basics", "title": "Git local basics", "status": "PLANNED" },
+        { "id": "P01-CH03-C02", "num": 6, "repo": "threejs-c06-github-publish-pages", "title": "Publish to GitHub and deploy", "status": "PLANNED" } ] },
+    { "id": "P02-CH01", "title": "Values, types, operators", "track": "core", "prereqs": ["P01-CH02"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Console unit converter for scene units", "status": "PLANNED", "next": "P02-CH02",
+      "concepts": [
+        { "id": "P02-CH01-C01", "num": 7, "repo": "threejs-c07-js-values-types-operators", "title": "Values, types and operators", "status": "PLANNED" } ] },
+    { "id": "P02-CH02", "title": "Control flow and functions", "track": "core", "prereqs": ["P02-CH01"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Grid-of-positions generator", "status": "PLANNED", "next": "P02-CH03",
+      "concepts": [
+        { "id": "P02-CH02-C01", "num": 8, "repo": "threejs-c08-js-control-flow", "title": "Control flow", "status": "PLANNED" },
+        { "id": "P02-CH02-C02", "num": 9, "repo": "threejs-c09-js-functions-scope", "title": "Functions and scope", "status": "PLANNED" } ] },
+    { "id": "P02-CH03", "title": "Arrays, objects, references", "track": "core", "prereqs": ["P02-CH02"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Shot-list data model as an array of objects", "status": "PLANNED", "next": "P02-CH04",
+      "concepts": [
+        { "id": "P02-CH03-C01", "num": 10, "repo": "threejs-c10-js-arrays-objects", "title": "Arrays and objects", "status": "PLANNED" },
+        { "id": "P02-CH03-C02", "num": 11, "repo": "threejs-c11-js-references-mutation", "title": "References and mutation", "status": "PLANNED" } ] },
+    { "id": "P02-CH04", "title": "Modern syntax and modules", "track": "core", "prereqs": ["P02-CH03"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Refactor the P02-CH03 project into 3 modules", "status": "PLANNED", "next": "P02-CH05",
+      "concepts": [
+        { "id": "P02-CH04-C01", "num": 12, "repo": "threejs-c12-js-modern-syntax", "title": "Modern JavaScript syntax", "status": "PLANNED" },
+        { "id": "P02-CH04-C02", "num": 13, "repo": "threejs-c13-js-modules-imports", "title": "Modules, imports and exports", "status": "PLANNED" } ] },
+    { "id": "P02-CH05", "title": "Classes and error handling", "track": "core", "prereqs": ["P02-CH04"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Timeline stub class that validates its inputs", "status": "PLANNED", "next": "P02-CH06",
+      "concepts": [
+        { "id": "P02-CH05-C01", "num": 14, "repo": "threejs-c14-js-classes", "title": "Classes", "status": "PLANNED" },
+        { "id": "P02-CH05-C02", "num": 15, "repo": "threejs-c15-js-error-handling", "title": "Error handling", "status": "PLANNED" } ] },
+    { "id": "P02-CH06", "title": "Events, callbacks, promises, async/await", "track": "core", "prereqs": ["P02-CH05"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Simulated asset loader with progress and failure states", "status": "PLANNED", "next": "P03-CH01",
+      "concepts": [
+        { "id": "P02-CH06-C01", "num": 16, "repo": "threejs-c16-js-callbacks-events", "title": "Callbacks and events", "status": "PLANNED" },
+        { "id": "P02-CH06-C02", "num": 17, "repo": "threejs-c17-js-promises-async-await", "title": "Promises and async/await", "status": "PLANNED" } ] },
+    { "id": "P03-CH01", "title": "HTML/CSS to host a canvas", "track": "core", "prereqs": ["P02-CH04"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Explainer stage page layout", "status": "PLANNED", "next": "P03-CH02",
+      "concepts": [
+        { "id": "P03-CH01-C01", "num": 18, "repo": "threejs-c18-html-css-canvas-host", "title": "HTML/CSS canvas host", "status": "PLANNED" } ] },
+    { "id": "P03-CH02", "title": "DOM and UI events", "track": "core", "prereqs": ["P03-CH01", "P02-CH06"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Play/pause/scrub control bar (no 3D yet)", "status": "PLANNED", "next": "P03-CH03",
+      "concepts": [
+        { "id": "P03-CH02-C01", "num": 19, "repo": "threejs-c19-dom-ui-events", "title": "DOM and UI events", "status": "PLANNED" } ] },
+    { "id": "P03-CH03", "title": "Animation loop, time, resize", "track": "core", "prereqs": ["P03-CH02"], "effortMinutes": { "low": 90, "high": 90 }, "project": "2D bouncing data dot, same speed at 30 and 120 Hz", "status": "PLANNED", "next": "P03-CH04",
+      "concepts": [
+        { "id": "P03-CH03-C01", "num": 20, "repo": "threejs-c20-raf-delta-time", "title": "requestAnimationFrame and delta time", "status": "PLANNED" },
+        { "id": "P03-CH03-C02", "num": 21, "repo": "threejs-c21-canvas-resize-pixel-ratio", "title": "Canvas resize and pixel ratio", "status": "PLANNED" } ] },
+    { "id": "P03-CH04", "title": "Debugging web projects", "track": "core", "prereqs": ["P03-CH03"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Broken-project clinic: fix 6 seeded faults", "status": "PLANNED", "next": "P03-CH05",
+      "concepts": [
+        { "id": "P03-CH04-C01", "num": 22, "repo": "threejs-c22-debugging-imports-paths-cors", "title": "Debugging imports, paths and CORS", "status": "PLANNED" } ] },
+    { "id": "P03-CH05", "title": "Checkpoint 1: animated 2D explainer card", "track": "checkpoint", "prereqs": ["P03-CH04"], "effortMinutes": { "low": 120, "high": 150 }, "project": "10-second 2D title-card animation with scrubber and PNG frame export", "status": "PLANNED", "next": "P04-CH01",
+      "concepts": [
+        { "id": "P03-CH05-C01", "num": 23, "repo": "threejs-c23-checkpoint-2d-explainer-card", "title": "Checkpoint 1: 2D explainer card", "status": "PLANNED" } ] },
+    { "id": "P04-CH01", "title": "Scene, camera, renderer, loop", "track": "core", "prereqs": ["P03-CH05"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Minimal principled scene rebuilt line by line", "status": "PLANNED", "next": "P04-CH02",
+      "concepts": [
+        { "id": "P04-CH01-C01", "num": 24, "repo": "threejs-c24-scene-camera-renderer", "title": "Scene, camera and renderer", "status": "PLANNED" },
+        { "id": "P04-CH01-C02", "num": 25, "repo": "threejs-c25-render-loop-resize", "title": "Render loop and resize", "status": "PLANNED" } ] },
+    { "id": "P04-CH02", "title": "Coordinates and vectors in 3D", "track": "core", "prereqs": ["P04-CH01"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Measure-the-room scene", "status": "PLANNED", "next": "P04-CH03",
+      "concepts": [
+        { "id": "P04-CH02-C01", "num": 26, "repo": "threejs-c26-coordinates-axes-helpers", "title": "Coordinates, axes and helpers", "status": "PLANNED" },
+        { "id": "P04-CH02-C02", "num": 27, "repo": "threejs-c27-vectors-distance-direction", "title": "Vectors: distance and direction", "status": "PLANNED" } ] },
+    { "id": "P04-CH03", "title": "Geometry, mesh, material", "track": "core", "prereqs": ["P04-CH02"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Primitive toy shelf", "status": "PLANNED", "next": "P04-CH04",
+      "concepts": [
+        { "id": "P04-CH03-C01", "num": 28, "repo": "threejs-c28-geometry-mesh-material", "title": "Geometry, mesh and material", "status": "PLANNED" } ] },
+    { "id": "P04-CH04", "title": "Lights and shadows", "track": "core", "prereqs": ["P04-CH03"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Three-point lighting on the toy shelf", "status": "PLANNED", "next": "P05-CH01",
+      "concepts": [
+        { "id": "P04-CH04-C01", "num": 29, "repo": "threejs-c29-lights-basics", "title": "Lights basics", "status": "PLANNED" },
+        { "id": "P04-CH04-C02", "num": 30, "repo": "threejs-c30-shadows", "title": "Shadows", "status": "PLANNED" } ] },
+    { "id": "P05-CH01", "title": "Angles and trigonometry for motion", "track": "core", "prereqs": ["P04-CH04"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Orbiting moon and bobbing marker", "status": "PLANNED", "next": "P05-CH02",
+      "concepts": [
+        { "id": "P05-CH01-C01", "num": 31, "repo": "threejs-c31-angles-trig-orbits", "title": "Angles, trigonometry and orbits", "status": "PLANNED" } ] },
+    { "id": "P05-CH02", "title": "Transforms and the scene graph", "track": "core", "prereqs": ["P05-CH01"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Articulated desk lamp", "status": "PLANNED", "next": "P05-CH03",
+      "concepts": [
+        { "id": "P05-CH02-C01", "num": 32, "repo": "threejs-c32-transforms-local-world", "title": "Transforms: local and world space", "status": "PLANNED" },
+        { "id": "P05-CH02-C02", "num": 33, "repo": "threejs-c33-scene-graph-groups", "title": "Scene graph and groups", "status": "PLANNED" } ] },
+    { "id": "P05-CH03", "title": "Rotations: Euler angles and quaternions", "track": "core", "prereqs": ["P05-CH02"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Turntable spinning smoothly between two orientations", "status": "PLANNED", "next": "P05-CH04",
+      "concepts": [
+        { "id": "P05-CH03-C01", "num": 34, "repo": "threejs-c34-euler-quaternions", "title": "Euler angles and quaternions", "status": "PLANNED" } ] },
+    { "id": "P05-CH04", "title": "Dot and cross products, lookAt", "track": "core", "prereqs": ["P05-CH03"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Spotlight that tracks a target and notices when it faces the viewer", "status": "PLANNED", "next": "P05-CH05",
+      "concepts": [
+        { "id": "P05-CH04-C01", "num": 35, "repo": "threejs-c35-dot-cross-lookat", "title": "Dot, cross and lookAt", "status": "PLANNED" } ] },
+    { "id": "P05-CH05", "title": "Matrices and camera projection", "track": "core", "prereqs": ["P05-CH04"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Side-by-side perspective vs orthographic diagram scene", "status": "PLANNED", "next": "P05-CH06",
+      "concepts": [
+        { "id": "P05-CH05-C01", "num": 36, "repo": "threejs-c36-matrices-intuition", "title": "Matrices intuition", "status": "PLANNED" },
+        { "id": "P05-CH05-C02", "num": 37, "repo": "threejs-c37-projection-frustum-depth", "title": "Projection, frustum and depth", "status": "PLANNED" } ] },
+    { "id": "P05-CH06", "title": "Checkpoint 2: solar-system diorama", "track": "checkpoint", "prereqs": ["P05-CH05"], "effortMinutes": { "low": 150, "high": 150 }, "project": "Scale-labelled diorama plus a PNG still at t = 5 s", "status": "PLANNED", "next": "P06-CH01",
+      "concepts": [
+        { "id": "P05-CH06-C01", "num": 38, "repo": "threejs-c38-checkpoint-solar-system-diorama", "title": "Checkpoint 2: solar-system diorama", "status": "PLANNED" } ] },
+    { "id": "P06-CH01", "title": "GPU and rasterisation mental model", "track": "core", "prereqs": ["P05-CH06"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Wireframe/normals/UV visualiser", "status": "PLANNED", "next": "P06-CH02",
+      "concepts": [
+        { "id": "P06-CH01-C01", "num": 39, "repo": "threejs-c39-gpu-rasterization-model", "title": "GPU and rasterisation model", "status": "PLANNED" } ] },
+    { "id": "P06-CH02", "title": "Colour management and tone mapping", "track": "core", "prereqs": ["P06-CH01"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Colour-checker scene", "status": "PLANNED", "next": "P06-CH03",
+      "concepts": [
+        { "id": "P06-CH02-C01", "num": 40, "repo": "threejs-c40-color-management-tone-mapping", "title": "Colour management and tone mapping", "status": "PLANNED" } ] },
+    { "id": "P06-CH03", "title": "Physically based materials", "track": "core", "prereqs": ["P06-CH02"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Material swatch board", "status": "PLANNED", "next": "P06-CH04",
+      "concepts": [
+        { "id": "P06-CH03-C01", "num": 41, "repo": "threejs-c41-pbr-materials", "title": "Physically based materials", "status": "PLANNED" } ] },
+    { "id": "P06-CH04", "title": "Textures and UVs", "track": "core", "prereqs": ["P06-CH03"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Textured crate and floor using CC0 textures with a manifest", "status": "PLANNED", "next": "P06-CH05",
+      "concepts": [
+        { "id": "P06-CH04-C01", "num": 42, "repo": "threejs-c42-textures-uvs", "title": "Textures and UVs", "status": "PLANNED" } ] },
+    { "id": "P06-CH05", "title": "Environment, background, fog", "track": "core", "prereqs": ["P06-CH04"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Studio product-shot set", "status": "PLANNED", "next": "P06-CH06",
+      "concepts": [
+        { "id": "P06-CH05-C01", "num": 43, "repo": "threejs-c43-environment-hdr", "title": "Environment and HDR lighting", "status": "PLANNED" },
+        { "id": "P06-CH05-C02", "num": 44, "repo": "threejs-c44-background-fog", "title": "Background and fog", "status": "PLANNED" } ] },
+    { "id": "P06-CH06", "title": "Transparency and visual-failure diagnosis", "track": "core", "prereqs": ["P06-CH05"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Glass lab and a fault-finding checklist", "status": "PLANNED", "next": "P07-CH01",
+      "concepts": [
+        { "id": "P06-CH06-C01", "num": 45, "repo": "threejs-c45-transparency-blending", "title": "Transparency and blending", "status": "PLANNED" },
+        { "id": "P06-CH06-C02", "num": 46, "repo": "threejs-c46-visual-failure-diagnosis", "title": "Visual-failure diagnosis", "status": "PLANNED" } ] },
+    { "id": "P07-CH01", "title": "Camera controls", "track": "core", "prereqs": ["P06-CH06"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Constrained exhibit viewer", "status": "PLANNED", "next": "P07-CH02",
+      "concepts": [
+        { "id": "P07-CH01-C01", "num": 47, "repo": "threejs-c47-orbit-and-other-controls", "title": "OrbitControls and other controls", "status": "PLANNED" } ] },
+    { "id": "P07-CH02", "title": "Raycasting, selection, dragging", "track": "core", "prereqs": ["P07-CH01"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Click-to-inspect and drag-to-arrange exhibits", "status": "PLANNED", "next": "P07-CH03",
+      "concepts": [
+        { "id": "P07-CH02-C01", "num": 48, "repo": "threejs-c48-raycasting-selection", "title": "Raycasting and selection", "status": "PLANNED" },
+        { "id": "P07-CH02-C02", "num": 49, "repo": "threejs-c49-pointer-dragging", "title": "Pointer dragging", "status": "PLANNED" } ] },
+    { "id": "P07-CH03", "title": "GUI parameters, keyboard, accessibility", "track": "core", "prereqs": ["P07-CH02"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Accessible exhibit navigator", "status": "PLANNED", "next": "P07-CH04",
+      "concepts": [
+        { "id": "P07-CH03-C01", "num": 50, "repo": "threejs-c50-lil-gui-parameters", "title": "lil-gui parameter panels", "status": "PLANNED" },
+        { "id": "P07-CH03-C02", "num": 51, "repo": "threejs-c51-keyboard-accessibility", "title": "Keyboard input and accessibility", "status": "PLANNED" } ] },
+    { "id": "P07-CH04", "title": "Labels and text", "track": "core", "prereqs": ["P07-CH03"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Labelled anatomy-style diagram", "status": "PLANNED", "next": "P07-CH05",
+      "concepts": [
+        { "id": "P07-CH04-C01", "num": 52, "repo": "threejs-c52-css2d-labels", "title": "CSS2D labels", "status": "PLANNED" },
+        { "id": "P07-CH04-C02", "num": 53, "repo": "threejs-c53-text-3d-and-overlays", "title": "3D text and HTML overlays", "status": "PLANNED" } ] },
+    { "id": "P07-CH05", "title": "Capstone A: responsive interactive museum", "track": "capstone", "prereqs": ["P07-CH04"], "effortMinutes": { "low": 240, "high": 360 }, "project": "3-exhibit museum with info panels, deployed", "status": "PLANNED", "next": "P08-CH01",
+      "concepts": [
+        { "id": "P07-CH05-C01", "num": 54, "repo": "threejs-c54-capstone-interactive-museum", "title": "Capstone A: interactive museum", "status": "PLANNED" } ] },
+    { "id": "P08-CH01", "title": "Custom BufferGeometry", "track": "core", "prereqs": ["P07-CH05"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Procedural terrain strip from an array", "status": "PLANNED", "next": "P08-CH02",
+      "concepts": [
+        { "id": "P08-CH01-C01", "num": 55, "repo": "threejs-c55-buffergeometry-custom", "title": "Custom BufferGeometry", "status": "PLANNED" } ] },
+    { "id": "P08-CH02", "title": "Points, lines, particles, instancing", "track": "core", "prereqs": ["P08-CH01"], "effortMinutes": { "low": 90, "high": 90 }, "project": "10,000-item instanced crowd", "status": "PLANNED", "next": "P08-CH03",
+      "concepts": [
+        { "id": "P08-CH02-C01", "num": 56, "repo": "threejs-c56-points-lines-particles", "title": "Points, lines and particles", "status": "PLANNED" },
+        { "id": "P08-CH02-C02", "num": 57, "repo": "threejs-c57-instancing-batching", "title": "Instancing and batching", "status": "PLANNED" } ] },
+    { "id": "P08-CH03", "title": "Loading assets and glTF/GLB", "track": "core", "prereqs": ["P08-CH02", "P02-CH06"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Model viewer with progress bar and friendly failure", "status": "PLANNED", "next": "P08-CH04",
+      "concepts": [
+        { "id": "P08-CH03-C01", "num": 58, "repo": "threejs-c58-loading-manager-errors", "title": "LoadingManager, progress and errors", "status": "PLANNED" },
+        { "id": "P08-CH03-C02", "num": 59, "repo": "threejs-c59-gltf-glb-loading", "title": "glTF/GLB loading", "status": "PLANNED" } ] },
+    { "id": "P08-CH04", "title": "Model fixes and asset compression", "track": "core", "prereqs": ["P08-CH03"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Before/after optimisation report", "status": "PLANNED", "next": "P08-CH05",
+      "concepts": [
+        { "id": "P08-CH04-C01", "num": 60, "repo": "threejs-c60-model-fixes", "title": "Model scale, orientation and material fixes", "status": "PLANNED" },
+        { "id": "P08-CH04-C02", "num": 61, "repo": "threejs-c61-asset-compression", "title": "Asset compression", "status": "PLANNED" } ] },
+    { "id": "P08-CH05", "title": "Disposal and asset provenance", "track": "core", "prereqs": ["P08-CH04"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Scene-swapping app with no leaks, plus ASSETS.json", "status": "PLANNED", "next": "P09-CH01",
+      "concepts": [
+        { "id": "P08-CH05-C01", "num": 62, "repo": "threejs-c62-disposal-memory", "title": "Disposal and memory", "status": "PLANNED" },
+        { "id": "P08-CH05-C02", "num": 63, "repo": "threejs-c63-asset-licensing-manifests", "title": "Asset licensing manifests", "status": "PLANNED" } ] },
+    { "id": "P09-CH01", "title": "Central clock and keyframe timeline", "track": "core", "prereqs": ["P08-CH05"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Timeline-driven scene with scrub bar and tests", "status": "PLANNED", "next": "P09-CH02",
+      "concepts": [
+        { "id": "P09-CH01-C01", "num": 64, "repo": "threejs-c64-central-clock-deterministic-time", "title": "Central clock and deterministic time", "status": "PLANNED" },
+        { "id": "P09-CH01-C02", "num": 65, "repo": "threejs-c65-keyframe-timeline", "title": "Keyframe timeline", "status": "PLANNED" } ] },
+    { "id": "P09-CH02", "title": "Interpolation, easing, animation principles", "track": "core", "prereqs": ["P09-CH01"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Reveal animation in 3 styles", "status": "PLANNED", "next": "P09-CH03",
+      "concepts": [
+        { "id": "P09-CH02-C01", "num": 66, "repo": "threejs-c66-lerp-easing", "title": "Lerp and easing", "status": "PLANNED" },
+        { "id": "P09-CH02-C02", "num": 67, "repo": "threejs-c67-animation-principles", "title": "Animation principles", "status": "PLANNED" } ] },
+    { "id": "P09-CH03", "title": "AnimationMixer, clips, skeletal and morph", "track": "core", "prereqs": ["P09-CH02", "P08-CH03"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Character/prop that switches clips on cue", "status": "PLANNED", "next": "P09-CH04",
+      "concepts": [
+        { "id": "P09-CH03-C01", "num": 68, "repo": "threejs-c68-animationmixer-clips", "title": "AnimationMixer and clips", "status": "PLANNED" },
+        { "id": "P09-CH03-C02", "num": 69, "repo": "threejs-c69-skeletal-morph", "title": "Skeletal and morph animation", "status": "PLANNED" } ] },
+    { "id": "P09-CH04", "title": "Curves, camera moves, camera language", "track": "core", "prereqs": ["P09-CH03"], "effortMinutes": { "low": 90, "high": 90 }, "project": "3-shot camera sequence with a shot list", "status": "PLANNED", "next": "P09-CH05",
+      "concepts": [
+        { "id": "P09-CH04-C01", "num": 70, "repo": "threejs-c70-curves-camera-paths", "title": "Curves and camera paths", "status": "PLANNED" },
+        { "id": "P09-CH04-C02", "num": 71, "repo": "threejs-c71-camera-language-composition", "title": "Camera language and composition", "status": "PLANNED" } ] },
+    { "id": "P09-CH05", "title": "Procedural motion and particles", "track": "core", "prereqs": ["P09-CH04"], "effortMinutes": { "low": 60, "high": 60 }, "project": "Seeded particle flow", "status": "PLANNED", "next": "P09-CH06",
+      "concepts": [
+        { "id": "P09-CH05-C01", "num": 72, "repo": "threejs-c72-procedural-motion", "title": "Procedural motion", "status": "PLANNED" } ] },
+    { "id": "P09-CH06", "title": "Capstone B: animated process diagram", "track": "capstone", "prereqs": ["P09-CH05"], "effortMinutes": { "low": 240, "high": 300 }, "project": "45-60 s scrubbable process animation", "status": "PLANNED", "next": "P10-CH01",
+      "concepts": [
+        { "id": "P09-CH06-C01", "num": 73, "repo": "threejs-c73-capstone-process-diagram", "title": "Capstone B: process diagram", "status": "PLANNED" } ] },
+    { "id": "P10-CH01", "title": "Data to 3D, charts and callouts", "track": "core", "prereqs": ["P09-CH06"], "effortMinutes": { "low": 90, "high": 90 }, "project": "3D bar/terrain chart with callouts", "status": "PLANNED", "next": "P10-CH02",
+      "concepts": [
+        { "id": "P10-CH01-C01", "num": 74, "repo": "threejs-c74-data-json-csv-to-3d", "title": "Data from JSON/CSV to 3D", "status": "PLANNED" },
+        { "id": "P10-CH01-C02", "num": 75, "repo": "threejs-c75-callouts-charts-annotations", "title": "Callouts, charts and annotations", "status": "PLANNED" } ] },
+    { "id": "P10-CH02", "title": "Aspect-ratio templates (16:9, 9:16, 1:1)", "track": "core", "prereqs": ["P10-CH01"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Reusable template rendering the same shot in 3 aspect ratios", "status": "PLANNED", "next": "P10-CH03",
+      "concepts": [
+        { "id": "P10-CH02-C01", "num": 76, "repo": "threejs-c76-aspect-ratio-templates", "title": "Aspect-ratio templates", "status": "PLANNED" } ] },
+    { "id": "P10-CH03", "title": "Capstone C: data-driven 3D visualisation", "track": "capstone", "prereqs": ["P10-CH02"], "effortMinutes": { "low": 240, "high": 240 }, "project": "Interactive and renderable data visualisation", "status": "PLANNED", "next": "P11-CH01",
+      "concepts": [
+        { "id": "P10-CH03-C01", "num": 77, "repo": "threejs-c77-capstone-data-visualization", "title": "Capstone C: data visualisation", "status": "PLANNED" } ] },
+    { "id": "P11-CH01", "title": "Pre-production", "track": "core", "prereqs": ["P10-CH03"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Pre-production pack for a 60 s explainer", "status": "PLANNED", "next": "P11-CH02",
+      "concepts": [
+        { "id": "P11-CH01-C01", "num": 78, "repo": "threejs-c78-script-storyboard-shotlist", "title": "Script, storyboard and shot list", "status": "PLANNED" } ] },
+    { "id": "P11-CH02", "title": "Route 1: quick canvas capture", "track": "core", "prereqs": ["P11-CH01"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Recorder with a format-detection report", "status": "PLANNED", "next": "P11-CH03",
+      "concepts": [
+        { "id": "P11-CH02-C01", "num": 79, "repo": "threejs-c79-canvas-capture-mediarecorder", "title": "Canvas capture with MediaRecorder", "status": "PLANNED" } ] },
+    { "id": "P11-CH03", "title": "Route 2: frame-by-frame render plus FFmpeg", "track": "core", "prereqs": ["P11-CH02"], "effortMinutes": { "low": 120, "high": 120 }, "project": "10 s 1080p30 clip = 300 frames, with a manifest", "status": "PLANNED", "next": "P11-CH04",
+      "concepts": [
+        { "id": "P11-CH03-C01", "num": 80, "repo": "threejs-c80-frame-by-frame-export", "title": "Frame-by-frame export", "status": "PLANNED" },
+        { "id": "P11-CH03-C02", "num": 81, "repo": "threejs-c81-ffmpeg-assemble-inspect", "title": "FFmpeg assemble and ffprobe inspect", "status": "PLANNED" } ] },
+    { "id": "P11-CH04", "title": "Route 3: narration, audio sync, captions, delivery", "track": "core", "prereqs": ["P11-CH03"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Narrated clip with burned and soft captions", "status": "PLANNED", "next": "P11-CH05",
+      "concepts": [
+        { "id": "P11-CH04-C01", "num": 82, "repo": "threejs-c82-narration-audio-sync", "title": "Narration and audio sync", "status": "PLANNED" },
+        { "id": "P11-CH04-C02", "num": 83, "repo": "threejs-c83-captions-delivery-settings", "title": "Captions and delivery settings", "status": "PLANNED" } ] },
+    { "id": "P11-CH05", "title": "Capstone D: reusable 30-90 s explainer pipeline", "track": "capstone", "prereqs": ["P11-CH04"], "effortMinutes": { "low": 360, "high": 480 }, "project": "Final encoded explainer plus pipeline repo (frames kept out of Git)", "status": "PLANNED", "next": "P12-CH01",
+      "concepts": [
+        { "id": "P11-CH05-C01", "num": 84, "repo": "threejs-c84-capstone-video-pipeline", "title": "Capstone D: video pipeline", "status": "PLANNED" } ] },
+    { "id": "P12-CH01", "title": "Shader concepts and a minimal shader", "track": "core", "prereqs": ["P11-CH05"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Time-uniform scan-line material", "status": "PLANNED", "next": "P12-CH02",
+      "concepts": [
+        { "id": "P12-CH01-C01", "num": 85, "repo": "threejs-c85-shader-basics-glsl", "title": "Shader basics (GLSL)", "status": "PLANNED" } ] },
+    { "id": "P12-CH02", "title": "Post-processing", "track": "core", "prereqs": ["P12-CH01"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Highlight-the-key-part bloom/outline shot", "status": "PLANNED", "next": "P12-CH03",
+      "concepts": [
+        { "id": "P12-CH02-C01", "num": 86, "repo": "threejs-c86-postprocessing-effectcomposer", "title": "Post-processing with EffectComposer", "status": "PLANNED" } ] },
+    { "id": "P12-CH03", "title": "WebGPURenderer, fallback and TSL (comparison)", "track": "core", "prereqs": ["P12-CH02"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Same scene on both renderers with a backend badge", "status": "PLANNED", "next": "P13-CH01",
+      "concepts": [
+        { "id": "P12-CH03-C01", "num": 87, "repo": "threejs-c87-webgpurenderer-fallback", "title": "WebGPURenderer and WebGL 2 fallback", "status": "PLANNED" },
+        { "id": "P12-CH03-C02", "num": 88, "repo": "threejs-c88-tsl-node-materials-intro", "title": "TSL and node materials intro", "optional": true, "status": "PLANNED" } ] },
+    { "id": "P13-CH01", "title": "Architecture and testing", "track": "core", "prereqs": ["P12-CH03"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Refactored Capstone B with a CI test workflow", "status": "PLANNED", "next": "P13-CH02",
+      "concepts": [
+        { "id": "P13-CH01-C01", "num": 89, "repo": "threejs-c89-project-architecture", "title": "Project architecture", "status": "PLANNED" },
+        { "id": "P13-CH01-C02", "num": 90, "repo": "threejs-c90-testing-vitest-playwright", "title": "Testing with Vitest and Playwright", "status": "PLANNED" } ] },
+    { "id": "P13-CH02", "title": "Performance budgets and profiling", "track": "core", "prereqs": ["P13-CH01"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Performance report with a quality toggle", "status": "PLANNED", "next": "P13-CH03",
+      "concepts": [
+        { "id": "P13-CH02-C01", "num": 91, "repo": "threejs-c91-performance-budgets-profiling", "title": "Performance budgets and profiling", "status": "PLANNED" } ] },
+    { "id": "P13-CH03", "title": "Deploy, release, reproducibility", "track": "core", "prereqs": ["P13-CH02"], "effortMinutes": { "low": 75, "high": 75 }, "project": "Released v1.0 of a capstone", "status": "PLANNED", "next": "P14-CH01",
+      "concepts": [
+        { "id": "P13-CH03-C01", "num": 92, "repo": "threejs-c92-deploy-release-reproducibility", "title": "Deploy, release and reproducibility", "status": "PLANNED" } ] },
+    { "id": "P14-CH01", "title": "Final independent explainer", "track": "capstone", "prereqs": ["P13-CH03"], "effortMinutes": { "low": 480, "high": 720 }, "project": "Original explainer, pipeline repo and production log", "status": "PLANNED", "next": null,
+      "concepts": [
+        { "id": "P14-CH01-C01", "num": 93, "repo": "threejs-c93-final-independent-explainer", "title": "Final independent explainer", "status": "PLANNED" } ] },
+    { "id": "P15-CH01", "title": "Optional: physics (Rapier vs cannon-es)", "track": "optional", "prereqs": ["P09-CH05"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Physics-driven demo comparing two engines", "status": "PLANNED", "next": null,
+      "concepts": [
+        { "id": "P15-CH01-C01", "num": 94, "repo": "threejs-c94-opt-physics-rapier-cannon", "title": "Physics: Rapier vs cannon-es", "status": "PLANNED" } ] },
+    { "id": "P15-CH02", "title": "Optional: GSAP timelines", "track": "optional", "prereqs": ["P09-CH02"], "effortMinutes": { "low": 75, "high": 75 }, "project": "The P09 reveal rebuilt with a GSAP timeline", "status": "PLANNED", "next": null,
+      "concepts": [
+        { "id": "P15-CH02-C01", "num": 95, "repo": "threejs-c95-opt-gsap-timelines", "title": "GSAP timelines", "status": "PLANNED" } ] },
+    { "id": "P15-CH03", "title": "Optional: WebCodecs + Mediabunny export", "track": "optional", "prereqs": ["P11-CH03"], "effortMinutes": { "low": 90, "high": 90 }, "project": "In-browser MP4 export where supported", "status": "PLANNED", "next": null,
+      "concepts": [
+        { "id": "P15-CH03-C01", "num": 96, "repo": "threejs-c96-opt-webcodecs-mediabunny-export", "title": "WebCodecs and Mediabunny export", "status": "PLANNED" } ] },
+    { "id": "P15-CH04", "title": "Optional: GPU compute with TSL", "track": "optional", "prereqs": ["P12-CH03"], "effortMinutes": { "low": 90, "high": 90 }, "project": "GPU-computed particle field", "status": "PLANNED", "next": null,
+      "concepts": [
+        { "id": "P15-CH04-C01", "num": 97, "repo": "threejs-c97-opt-gpu-compute-tsl", "title": "GPU compute with TSL", "status": "PLANNED" } ] },
+    { "id": "P15-CH05", "title": "Optional: WebXR introduction", "track": "optional", "prereqs": ["P07-CH05"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Museum exhibit viewable in XR where a device is available", "status": "PLANNED", "next": null,
+      "concepts": [
+        { "id": "P15-CH05-C01", "num": 98, "repo": "threejs-c98-opt-webxr-intro", "title": "WebXR introduction", "status": "PLANNED" } ] },
+    { "id": "P15-CH06", "title": "Optional: Blender to glTF pipeline", "track": "optional", "prereqs": ["P08-CH04"], "effortMinutes": { "low": 90, "high": 90 }, "project": "Original model exported from Blender and loaded in a scene", "status": "PLANNED", "next": null,
+      "concepts": [
+        { "id": "P15-CH06-C01", "num": 99, "repo": "threejs-c99-opt-blender-gltf-pipeline", "title": "Blender to glTF pipeline", "status": "PLANNED" } ] }
+  ]
+}

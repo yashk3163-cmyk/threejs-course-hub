@@ -1,0 +1,65 @@
+{
+  "roadmapVersion": "1.0.0",
+  "workflowState": "AWAITING_CHAPTER_CONFIRMATION",
+  "updated": "2026-10-29T15:00:00+05:30",
+  "stateHistory": [
+    { "state": "NOT_INITIALIZED", "at": "2026-10-29T14:04:00+05:30", "note": "Creator issued INITIALIZE COURSE." },
+    { "state": "ROADMAP_DRAFTED", "at": "2026-10-29", "note": "Roadmap 0.1.0-draft delivered as a report; no files written, GitHub NOT PERFORMED." },
+    { "state": "ROADMAP_APPROVED", "at": "2026-10-29T14:50:00+05:30", "note": "Creator replied APPROVE ROADMAP; owner = creator's personal account; hub name threejs-course-hub; private. Frozen as baseline 1.0.0." },
+    { "state": "AWAITING_CHAPTER_CONFIRMATION", "at": "2026-10-29T15:00:00+05:30", "note": "P01-CH01 preflight shown; waiting for YES, START CHAPTER P01-CH01." }
+  ],
+  "approval": {
+    "approved": true,
+    "approvedVersion": "1.0.0",
+    "approvedDate": "2026-10-29",
+    "approvedBy": "creator",
+    "basedOn": "0.1.0-draft"
+  },
+  "github": {
+    "owner": null,
+    "ownerNote": "Creator's personal GitHub account. Username not yet supplied; recorded on first verified publish.",
+    "hubRepo": "threejs-course-hub",
+    "visibility": "private",
+    "conceptRepoVisibility": "private (default; can change per repo when a chapter needs public hosting)",
+    "hubPublished": false,
+    "writeMechanism": "Workspace gh CLI is NOT authenticated, so repositories cannot be created from here. Pushing is possible only after the creator creates an empty repo and it is attached to the session with push access. Not yet attempted.",
+    "lastVerified": null
+  },
+  "repos": {},
+  "chapters": {
+    "completed": [],
+    "inProgress": [],
+    "blocked": [],
+    "awaitingConfirmation": "P01-CH01",
+    "next": "P01-CH01"
+  },
+  "conceptRepos": { "planned": 99, "created": 0, "verified": 0 },
+  "localPackage": {
+    "path": "threejs-course-hub/ in the assistant workspace (session-scoped) and threejs-course-hub.zip delivered in chat",
+    "projectMirror": "Claude Project 'THREE JS', folder threejs-course-hub/",
+    "localCommit": "see CURRENT_STATE.md"
+  },
+  "environment": {
+    "checkedAt": "2026-10-29",
+    "workspace": {
+      "node": "22.23.4",
+      "npm": "10.9.9",
+      "git": "2.43.0",
+      "gh": "2.89.0 (not authenticated)",
+      "ffmpeg": "6.1.1 (distribution build)",
+      "python": "3.13.18",
+      "npmRegistry": "reachable",
+      "browserForVisualTests": "not checked in workspace; creator's computer is linked and may offer a browser pane, to be checked at chapter time"
+    }
+  },
+  "tests": {
+    "hubValidator": "see CURRENT_STATE.md for the latest run",
+    "chapterTests": { "run": 0, "passed": 0, "failed": 0 }
+  },
+  "openQuestions": [
+    "Creator's GitHub username (needed to attach and push to the private hub repo).",
+    "GitHub plan: Pages from private repos needs Pro/Team/Enterprise. Decide the deploy target at the P01-CH03 preflight if the account is on GitHub Free.",
+    "Concept repos must be created by the creator (1-3 per chapter) unless an authenticated repo-creation path becomes available.",
+    "Node 26 LTS is the course target but the assistant workspace has Node 22.23.4; chapter tests will record which Node actually ran them."
+  ]
+}

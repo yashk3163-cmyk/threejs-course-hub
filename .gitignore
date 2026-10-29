@@ -1,0 +1,28 @@
+# dependencies and build output
+node_modules/
+dist/
+.vite/
+coverage/
+playwright-report/
+test-results/
+
+# secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+
+# logs and OS clutter
+*.log
+.DS_Store
+Thumbs.db
+
+# large generated media (keep manifests and regeneration scripts instead)
+outputs/
+frames/
+*.mp4
+*.webm
+*.mov
+*.mkv
+*.wav
+*.zip
