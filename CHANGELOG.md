@@ -2,6 +2,15 @@
 
 All notable changes to the course plan and hub. Dates are Asia/Calcutta.
 
+## P01-CH01 complete — 2026-10-30
+
+- Built, tested and published chapter P01-CH01 — Setup and first 3D quick win.
+  - `threejs-c01-dev-environment-setup` @ `024ee45` (20 files): environment check, version helpers (7 tests), DevTools practice page, full lesson.
+  - `threejs-c02-first-scene-quick-win` @ `e01e14d` (27 files): Three.js r186 scene driven by `config.js`, config checks, time-based motion, pause and reduced motion, tall-screen framing (21 tests), full lesson.
+  - Both verified by fresh clone with tests re-run. 18/18 automated browser checks pass (headless Chrome, software WebGL).
+- Hub: added `CHAPTERS/P01-CH01.md`, `CHAPTERS/P01-CH01-RESEARCH_LOG.md`, `qa/`; sources S40–S57; 22 glossary terms; decisions D-022–D-027; CURRICULUM_MAP, PROGRESS, CURRENT_STATE and REPOSITORY_INDEX updated.
+- Workflow state: AWAITING_CHAPTER_CONFIRMATION → CHAPTER_IN_PROGRESS → CHAPTER_QA → PUBLISHING → CHAPTER_COMPLETE. Next: P01-CH02, on request.
+
 ## Hub complete — 2026-10-29 15:22
 
 - Creator installed the Claude GitHub App. Assistant pushed `8049e5a` (the 14 missing files plus updated state files) on top of `625425c`. Verified: `main` = `8049e5a`, fresh clone has all 27 files byte-identical to the built hub, validator passes (D-021).

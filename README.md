@@ -18,12 +18,14 @@ This repository holds the plan, the state and the rules. Lessons and runnable co
 | History of changes | CHANGELOG.md |
 | Copy-paste prompts for each workflow step | PROMPTS/ |
 | Templates for concept repos, lessons, research logs, test reports, QA | TEMPLATES/ |
+| Chapter overviews and research logs | CHAPTERS/ |
+| Automated checks used to test chapters | qa/ |
 
 ## Current status
 
 - Roadmap **v1.0.0 approved** on 2026-10-29.
-- Workflow state: **AWAITING_CHAPTER_CONFIRMATION** for P01-CH01 — Setup and first 3D quick win.
-- No chapter has started. No concept repository exists yet.
+- **P01-CH01 — Setup and first 3D quick win: complete** (2026-10-30). Start here: [threejs-c01-dev-environment-setup](https://github.com/yashk3163-cmyk/threejs-c01-dev-environment-setup), then [threejs-c02-first-scene-quick-win](https://github.com/yashk3163-cmyk/threejs-c02-first-scene-quick-win). Chapter overview: CHAPTERS/P01-CH01.md.
+- Next: P01-CH02 — What the tools do: terminal, Node, npm, Vite, import maps (starts on request).
 
 ## Baseline stack (re-verified at each chapter)
 

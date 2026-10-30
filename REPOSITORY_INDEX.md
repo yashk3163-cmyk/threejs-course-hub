@@ -9,9 +9,9 @@
 
 | Concept ID | Repository | Chapter | Concept | Status | Verified URL | Last verified commit |
 |---|---|---|---|---|---|---|
-| (hub) | threejs-course-hub | — | Course control hub | CREATED - complete (27 files) | https://github.com/yashk3163-cmyk/threejs-course-hub | 8049e5ac0ef6b8efdc2aad1f70830b42fd749071 |
-| P01-CH01-C01 | threejs-c01-dev-environment-setup | P01-CH01 | Development environment setup | PLANNED | — | — |
-| P01-CH01-C02 | threejs-c02-first-scene-quick-win | P01-CH01 | First 3D scene quick win | PLANNED | — | — |
+| (hub) | threejs-course-hub | — | Course control hub | ACTIVE | https://github.com/yashk3163-cmyk/threejs-course-hub | 271837fcc59be2ae04fe41d1be79386b286d0283 |
+| P01-CH01-C01 | threejs-c01-dev-environment-setup | P01-CH01 | Development environment setup | COMPLETE | https://github.com/yashk3163-cmyk/threejs-c01-dev-environment-setup | 024ee45cd5b296c492f0fa4e77b31f0bc2bf2d7d |
+| P01-CH01-C02 | threejs-c02-first-scene-quick-win | P01-CH01 | First 3D scene quick win | COMPLETE | https://github.com/yashk3163-cmyk/threejs-c02-first-scene-quick-win | e01e14d4686aa54629f06109d86a92a4c0664e20 |
 | P01-CH02-C01 | threejs-c03-terminal-node-npm-scripts | P01-CH02 | Terminal, Node, npm and scripts | PLANNED | — | — |
 | P01-CH02-C02 | threejs-c04-vite-vs-importmap-routes | P01-CH02 | Vite route vs import-map route | PLANNED | — | — |
 | P01-CH03-C01 | threejs-c05-git-local-basics | P01-CH03 | Git local basics | PLANNED | — | — |

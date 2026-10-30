@@ -1,6 +1,6 @@
 # Source register (master)
 
-Accessed 2026-10-29 unless noted. "Secondary" sources may not be the sole support for a claim in a lesson; they are flagged for re-verification. Each concept repo keeps its own SOURCES.md; entries used there are also added here.
+Accessed 2026-10-29 unless noted. S40–S57 were added for P01-CH01. "Secondary" sources may not be the sole support for a claim in a lesson; they are flagged for re-verification. Each concept repo keeps its own SOURCES.md; entries used there are also added here.
 
 | ID | Title | URL | Publisher / maintainer | Claim supported | Version-specific |
 |---|---|---|---|---|---|
@@ -43,6 +43,24 @@ Accessed 2026-10-29 unless noted. "Secondary" sources may not be the sole suppor
 | S37 | npm package contents of `three@0.186.1` | `npm pack three@0.186.1 --dry-run --json` (run in workspace) | npm registry (primary) | `build/` has no `*.min.js`; `exports` include `./addons/*`, `./webgpu`, `./tsl` | Y |
 | S38 | npm registry metadata for `three` and `vite` | `npm view three time`, `npm view vite time`, `npm view vite@8.3.5 engines` (run in workspace) | npm registry (primary) | three 0.186.1 published 2026-09-24; vite 8.3.5 published 2026-10-21; Vite 8.3.5 engines `^20.19.0 \|\| >=22.12.0` | Y |
 | S39 | Creating a GitHub Pages site | https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site | GitHub Docs | Pages available in public repos on GitHub Free; public and private repos on Pro, Team, Enterprise Cloud and Enterprise Server | Y |
+| S40 | Node.js v26.13.0 (LTS) release post | https://nodejs.org/en/blog/release/v26.13.0 | OpenJS Foundation | 26.13.0 LTS "Lithium" (2026-10-28, to end of April 2029); `.msi`, `.pkg`, Linux binaries; Linux needs `libatomic` since Node 25 | Y |
+| S41 | Download Node.js | https://nodejs.org/en/download | OpenJS Foundation | "Latest LTS" is v26.13.0 | Y |
+| S42 | nvm README | https://github.com/nvm-sh/nvm | nvm maintainers | Install command v0.40.8; not native on Windows | Y |
+| S43 | Setting up Visual Studio Code | https://code.visualstudio.com/docs/setup/setup-overview | Microsoft | Windows, macOS, Linux; no account for the core editor; built-in terminal | N |
+| S44 | Terminal basics | https://code.visualstudio.com/docs/terminal/basics | Microsoft | Ctrl+` / ⌃` toggles the terminal; opens in the workspace folder | N |
+| S45 | Open Chrome DevTools | https://developer.chrome.com/docs/devtools/open | Google | DevTools and Console shortcuts | N |
+| S46 | Set-ExecutionPolicy | https://learn.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy | Microsoft | Default Restricted on Windows clients; RemoteSigned for CurrentUser | N |
+| S47 | npm ci | https://docs.npmjs.com/cli/v10/commands/npm-ci | npm | Lockfile required; errors when out of sync; never writes package files | N |
+| S48 | Getting Started (Vite guide) | https://vite.dev/guide/ | Vite team | Node 20.19+/22.12+; dev/build/preview scripts; `index.html` entry point | Y |
+| S49 | Server Options | https://vite.dev/config/server-options | Vite team | Default port 5173; next free port if busy | Y |
+| S50 | Test runner (node:test) | https://nodejs.org/api/test.html | OpenJS Foundation | Stable since v20; default `node --test` patterns | Y |
+| S51 | Understanding SC 2.2.2 Pause, Stop, Hide | https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html | W3C | Auto-starting motion over 5 s needs a pause mechanism (Level A) | N |
+| S52 | prefers-reduced-motion | https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion | MDN | Reduced-motion preference; Baseline since Jan 2020 | N |
+| S53 | Downloading source code archives | https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives | GitHub | Code → Download ZIP; no Git history | N |
+| S54 | three.js r186 source, as installed | `node_modules/three/src/` from `three@0.186.1` | three.js authors | setAnimationLoop timestamp; sRGB output default; Color.NAMES and setStyle formats (space-separated rgb silently ignored); WebGL context error text; Icosahedron detail 0 flat normals | Y |
+| S55 | Course workspace runs (P01-CH01) | npm, Vite, Playwright runs on 2026-10-29/30 | this course | Quoted command output, error texts, build sizes, browser results | Y |
+| S56 | Visual Studio Code on macOS | https://code.visualstudio.com/docs/setup/mac | Microsoft | Download, open, drag into Applications (accessed 2026-10-30) | N |
+| S57 | Visual Studio Code on Linux | https://code.visualstudio.com/docs/setup/linux | Microsoft | Official `.deb`/`.rpm`; `.deb` via software centre or apt (accessed 2026-10-30) | N |
 
 ## Pending verification (no lesson claims rest on these yet)
 

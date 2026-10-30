@@ -4,10 +4,32 @@ Plan: each chapter adds its new terms (term · plain-English definition · first
 
 | Term | Plain-English definition | First chapter | Verified |
 |---|---|---|---|
-| Node.js | A program that runs JavaScript outside the browser; in this course it runs our tools. | P01-CH01 | — |
-| npm | Node's package manager: downloads libraries and runs project scripts. | P01-CH02 | — |
-| package-lock.json | Records exact installed versions so others can reproduce the install with `npm ci`. | P01-CH02 | — |
-| Vite | Development server and build tool that serves modules quickly and bundles them for deployment. | P01-CH02 | — |
+| Node.js | A program that runs JavaScript outside the browser; in this course it runs our tools. | P01-CH01 | P01-CH01 |
+| npm | Node's package manager: downloads libraries and runs project scripts. | P01-CH01 | P01-CH01 |
+| package-lock.json | Records exact installed versions so others can reproduce the install with `npm ci`. | P01-CH01 | P01-CH01 |
+| Vite | Development server and build tool that serves modules quickly and bundles them for deployment. | P01-CH01 (used), P01-CH02 (explained) | P01-CH01 |
+| Terminal | A text window for typing commands (also called command line, shell, PowerShell or Command Prompt). | P01-CH01 | P01-CH01 |
+| Current folder (working directory) | The folder the terminal is "standing in"; commands look for files there. | P01-CH01 | P01-CH01 |
+| PATH | The list of folders where the computer looks for programs such as `node`; only terminals opened after an install see changes. | P01-CH01 | P01-CH01 |
+| npm script | A named command in `package.json`, run with `npm run <name>` (or `npm test`). | P01-CH01 | P01-CH01 |
+| LTS (Long-Term Support) | A Node.js version line that receives fixes for years; the safe choice for learning. | P01-CH01 | P01-CH01 |
+| Exit code | A number a program returns when it finishes: 0 means success, anything else means something failed. | P01-CH01 | P01-CH01 |
+| DevTools | The browser's built-in developer tools. | P01-CH01 | P01-CH01 |
+| Console | The DevTools panel that shows a page's messages and errors, and can run JavaScript. | P01-CH01 | P01-CH01 |
+| Stack trace | The lines under an error listing the functions that were running, with file names and line numbers. | P01-CH01 | P01-CH01 |
+| Dependency | A package a project needs, listed in `package.json`; packages can have dependencies of their own. | P01-CH01 | P01-CH01 |
+| node_modules | The folder where npm puts installed packages; never edited by hand, always re-creatable. | P01-CH01 | P01-CH01 |
+| npm ci | Installs exactly the versions in `package-lock.json`; fails if the lockfile and `package.json` disagree. | P01-CH01 | P01-CH01 |
+| Development server | A program (here Vite) that serves a project to the browser while you work and refreshes it on save. | P01-CH01 | P01-CH01 |
+| localhost / port | "This computer" / a numbered door on it; Vite's dev server uses port 5173 by default. | P01-CH01 | P01-CH01 |
+| Three.js | A JavaScript library that makes 3D drawing in the browser much easier. | P01-CH01 | P01-CH01 |
+| WebGL | The browser's built-in system for drawing 3D graphics with the graphics card. | P01-CH01 | P01-CH01 |
+| Canvas | An HTML `<canvas>` element: a blank picture area that the renderer paints into. | P01-CH01 | P01-CH01 |
+| Geometry / material | The shape of a mesh / the look of its surface. | P01-CH01 (recognise), P04-CH03 (explained) | P01-CH01 |
+| Light | An object that lights the scene; standard materials look black without one. | P01-CH01 (recognise), P04-CH04 (explained) | P01-CH01 |
+| Frame | One painted picture; smooth motion is many frames per second. | P01-CH01 | P01-CH01 |
+| Animation loop | A function that runs once per frame to update and repaint the scene. | P01-CH01 | P01-CH01 |
+| Configuration (config) | Settings kept separate from the code that uses them. | P01-CH01 | P01-CH01 |
 | Import map | A browser feature that maps names like `three` to URLs, enabling module imports without a build step. | P01-CH02 | — |
 | ES module | A JavaScript file that uses `import` and `export`. | P02-CH04 | — |
 | Promise | An object representing a value that will be ready later, or an error if it fails. | P02-CH06 | — |
@@ -15,12 +37,12 @@ Plan: each chapter adds its new terms (term · plain-English definition · first
 | Delta time | Time elapsed since the last frame, used to keep motion speed independent of frame rate. | P03-CH03 | — |
 | devicePixelRatio | Ratio of physical screen pixels to CSS pixels; affects sharpness and rendering cost. | P03-CH03 | — |
 | CORS | Browser security rule controlling which sites may load resources from other origins. | P03-CH04 | — |
-| Scene | The container that holds everything to be drawn. | P04-CH01 | — |
-| Camera | Defines the viewpoint and projection used to draw the scene. | P04-CH01 | — |
-| Renderer | Turns a scene plus a camera into pixels on a canvas (here `WebGLRenderer`). | P04-CH01 | — |
+| Scene | The container that holds everything to be drawn. | P01-CH01 (recognise), P04-CH01 (explained) | P01-CH01 |
+| Camera | Defines the viewpoint and projection used to draw the scene. | P01-CH01 (recognise), P04-CH01 (explained) | P01-CH01 |
+| Renderer | Turns a scene plus a camera into pixels on a canvas (here `WebGLRenderer`). | P01-CH01 (recognise), P04-CH01 (explained) | P01-CH01 |
 | Vector3 | Three numbers (x, y, z) used for positions, directions and offsets. | P04-CH02 | — |
 | Normalise | Scale a vector to length 1 while keeping its direction. | P04-CH02 | — |
-| Mesh | A drawable object: geometry (shape) plus material (surface look). | P04-CH03 | — |
+| Mesh | A drawable object: geometry (shape) plus material (surface look). | P01-CH01 (recognise), P04-CH03 (explained) | P01-CH01 |
 | Local vs world space | Coordinates relative to a parent object vs relative to the whole scene. | P05-CH02 | — |
 | Scene graph | The parent–child tree of objects; children inherit their parents' transforms. | P05-CH02 | — |
 | Quaternion | A four-number representation of rotation that interpolates smoothly without gimbal lock. | P05-CH03 | — |

@@ -1,12 +1,48 @@
 {
   "roadmapVersion": "1.0.0",
-  "workflowState": "AWAITING_CHAPTER_CONFIRMATION",
-  "updated": "2026-10-29T15:25:00+05:30",
+  "workflowState": "CHAPTER_COMPLETE",
+  "updated": "2026-10-30T13:30:00+05:30",
   "stateHistory": [
-    { "state": "NOT_INITIALIZED", "at": "2026-10-29T14:04:00+05:30", "note": "Creator issued INITIALIZE COURSE." },
-    { "state": "ROADMAP_DRAFTED", "at": "2026-10-29", "note": "Roadmap 0.1.0-draft delivered as a report; no files written, GitHub NOT PERFORMED." },
-    { "state": "ROADMAP_APPROVED", "at": "2026-10-29T14:50:00+05:30", "note": "Creator replied APPROVE ROADMAP; owner = creator's personal account; hub name threejs-course-hub; private. Frozen as baseline 1.0.0." },
-    { "state": "AWAITING_CHAPTER_CONFIRMATION", "at": "2026-10-29T15:00:00+05:30", "note": "P01-CH01 preflight shown; waiting for YES, START CHAPTER P01-CH01." }
+    {
+      "state": "NOT_INITIALIZED",
+      "at": "2026-10-29T14:04:00+05:30",
+      "note": "Creator issued INITIALIZE COURSE."
+    },
+    {
+      "state": "ROADMAP_DRAFTED",
+      "at": "2026-10-29",
+      "note": "Roadmap 0.1.0-draft delivered as a report; no files written, GitHub NOT PERFORMED."
+    },
+    {
+      "state": "ROADMAP_APPROVED",
+      "at": "2026-10-29T14:50:00+05:30",
+      "note": "Creator replied APPROVE ROADMAP; owner = creator's personal account; hub name threejs-course-hub; private. Frozen as baseline 1.0.0."
+    },
+    {
+      "state": "AWAITING_CHAPTER_CONFIRMATION",
+      "at": "2026-10-29T15:00:00+05:30",
+      "note": "P01-CH01 preflight shown; waiting for YES, START CHAPTER P01-CH01."
+    },
+    {
+      "state": "CHAPTER_IN_PROGRESS",
+      "at": "2026-10-29T15:24:00+05:30",
+      "note": "Creator created both P01-CH01 repos and gave access; taken as YES, START CHAPTER P01-CH01 (D-022)."
+    },
+    {
+      "state": "CHAPTER_QA",
+      "at": "2026-10-30T12:00:00+05:30",
+      "note": "Unit tests, clean install, build and 18 browser checks; work paused overnight by a web-lookup limit, resumed 2026-10-30."
+    },
+    {
+      "state": "PUBLISHING",
+      "at": "2026-10-30T13:15:00+05:30",
+      "note": "Both concept repos pushed; verified by fresh clone and re-run tests."
+    },
+    {
+      "state": "CHAPTER_COMPLETE",
+      "at": "2026-10-30T13:30:00+05:30",
+      "note": "P01-CH01 complete; hub updated. Next: P01-CH02, only on request."
+    }
   ],
   "approval": {
     "approved": true,
@@ -23,30 +59,51 @@
     "conceptRepoVisibility": "private (default; can change per repo when a chapter needs public hosting)",
     "hubPublished": true,
     "writeMechanism": "Claude GitHub App installed by the creator (2026-10-29 15:19). The assistant pushes and verifies directly. The creator still creates each new empty repo; the assistant attaches it with push access before writing.",
-    "lastVerified": "2026-10-29T15:22:00+05:30"
+    "lastVerified": "2026-10-30T13:15:00+05:30"
   },
   "repos": {
     "threejs-course-hub": {
-      "status": "CREATED - complete (27 files)",
+      "status": "ACTIVE",
       "verifiedUrl": "https://github.com/yashk3163-cmyk/threejs-course-hub",
-      "verifiedCommit": "8049e5ac0ef6b8efdc2aad1f70830b42fd749071",
+      "verifiedCommit": "271837fcc59be2ae04fe41d1be79386b286d0283",
       "branch": "main",
-      "verifiedAt": "2026-10-29T15:22:00+05:30",
-      "verification": "Pushed by the assistant on top of the creator's 625425c; git ls-remote matches; fresh clone has 27 files byte-identical to the built hub; validator passes in the clone. Later commits that only update state files are listed in CHANGELOG.md."
+      "verifiedAt": "2026-10-29T15:25:00+05:30",
+      "verification": "Last commit verified by git ls-remote before the P01-CH01 hub update. Later hub commits are listed in CHANGELOG.md and verified at the start of the next session."
+    },
+    "threejs-c01-dev-environment-setup": {
+      "status": "COMPLETE",
+      "verifiedUrl": "https://github.com/yashk3163-cmyk/threejs-c01-dev-environment-setup",
+      "verifiedCommit": "024ee45cd5b296c492f0fa4e77b31f0bc2bf2d7d",
+      "branch": "main",
+      "verifiedAt": "2026-10-30T13:15:00+05:30",
+      "verification": "Fresh clone identical to the built files (20 files); npm test 7/7; npm run check READY."
+    },
+    "threejs-c02-first-scene-quick-win": {
+      "status": "COMPLETE",
+      "verifiedUrl": "https://github.com/yashk3163-cmyk/threejs-c02-first-scene-quick-win",
+      "verifiedCommit": "e01e14d4686aa54629f06109d86a92a4c0664e20",
+      "branch": "main",
+      "verifiedAt": "2026-10-30T13:15:00+05:30",
+      "verification": "Fresh clone identical to the built files (27 files); npm ci; npm test 21/21; npm run build."
     }
   },
   "chapters": {
-    "completed": [],
+    "completed": [
+      "P01-CH01"
+    ],
     "inProgress": [],
     "blocked": [],
-    "awaitingConfirmation": "P01-CH01",
-    "next": "P01-CH01"
+    "awaitingConfirmation": null,
+    "next": "P01-CH02"
   },
-  "conceptRepos": { "planned": 99, "created": 0, "verified": 0 },
+  "conceptRepos": {
+    "planned": 99,
+    "created": 2,
+    "verified": 2
+  },
   "localPackage": {
-    "canonicalHistory": "GitHub main branch (yashk3163-cmyk/threejs-course-hub). The assistant's earlier local commit 8b223fa (inside threejs-course-hub.zip) is a separate history and is retired.",
-    "pendingUpload": "none (hub-upload-pack.zip superseded by the push of 8049e5a)",
-    "projectMirror": "Claude Project 'THREE JS', folder threejs-course-hub/ (all 27 files, kept in step with this file)"
+    "canonicalHistory": "GitHub main branches of the hub and each concept repo.",
+    "projectMirror": "Claude Project 'THREE JS', folder threejs-course-hub/ (kept in step with the hub)"
   },
   "environment": {
     "checkedAt": "2026-10-29",
@@ -62,12 +119,31 @@
     }
   },
   "tests": {
-    "hubValidator": "see CURRENT_STATE.md for the latest run",
-    "chapterTests": { "run": 0, "passed": 0, "failed": 0 }
+    "hubValidator": "PASS (see CURRENT_STATE.md)",
+    "chapterTests": {
+      "P01-CH01": {
+        "unit": "28/28 pass (C01 7, C02 21)",
+        "browser": "18/18 pass (headless Chrome for Testing 153, SwiftShader)",
+        "build": "pass with expected chunk-size warning",
+        "notTested": [
+          "real GPU",
+          "Windows",
+          "macOS",
+          "Safari",
+          "Firefox",
+          "Edge",
+          "Node.js 26"
+        ]
+      }
+    }
   },
   "openQuestions": [
-    "GitHub plan: Pages from private repos needs Pro/Team/Enterprise. Decide the deploy target at the P01-CH03 preflight if the account is on GitHub Free.",
-    "Concept repos must be created by the creator (1-3 per chapter) unless an authenticated repo-creation path becomes available.",
-    "Node 26 LTS is the course target but the assistant workspace has Node 22.23.4; chapter tests will record which Node actually ran them."
-  ]
+    "GitHub plan — Pages from private repos needs Pro/Team/Enterprise. Decide the deploy target at the P01-CH03 preflight.",
+    "For P01-CH02 the creator creates two empty private repos: threejs-c03-terminal-node-npm-scripts and threejs-c04-vite-vs-importmap-routes, and adds them to the Claude GitHub App if it uses selected repositories.",
+    "Course target is Node 26 LTS; the workspace runs Node 22.23.4. Test reports record the Node that actually ran.",
+    "Optional: the creator's computer is linked to this session; with permission, chapter checks could also run there (real GPU, the creator's OS)."
+  ],
+  "learnerProgress": {
+    "P01-CH01": "NOT STARTED — the creator works through C01 then C02 on their own computer; mastery gates are in each LESSON.md section 19."
+  }
 }
